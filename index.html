@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  ng-app="app">
+<head>
+<!-- AngularJS link -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- navScript -->
+<script src="resources/js/navScript.js"></script>
+
+<!-- controllers -->
+<script src="resources/js/controllers.js"></script>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+
+<!-- icon -->
+<link rel="shortcut icon" type="image/x-icon" href="resources/images/yinyang.ico">
+</head>
+<body >
+<!-- to do:
+- Bottom nav links: About, Social Media, Contact, etc.
+- Carousel images, eventually showing off various web layouts.
+- Nav Menu:
+- + links out to demo sites
+- + home link, highlighted already
+- + Bio, options for social media, about page, skills, etc
+- + Portfolio items, work on the game you've made, link out to codefights, etc.
+- + API things - build the festival comparison tool,
+- + Anime
+- + Games I play
+- + Music stuff
+- Contact form
+- Responsiveness
+-->
+<div ng-controller="NavBar" ng-cloak>
+  <md-content class="md-padding">
+    <md-nav-bar
+      md-no-ink-bar="disableInkBar"
+      md-selected-nav-item="currentNavItem"
+      nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-click="goto('home')" name="home">
+      Home
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('bio')" name="bio">
+      About
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('portfolio')" name="portfolio">
+      Portfolio
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('tools')" name="tools">
+      Tools
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('anime')" name="anime">
+      Anime
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('games')" name="games">
+      Games
+    </md-nav-item>
+    <md-nav-item md-nav-click="goto('music')" name="music">
+      Music
+    </md-nav-item>
+</div>
+<div class="bgimg">
+  <div class="topleft">
+    <p></p>
+  </div>
+  <div class="middle">
+    <h1>Work in Progress</h1>
+    <div ng-controller="HelloController">
+      <h2>{{message}}</h2>
+    </div>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="resources/js/demoscript.js"></script>
+</body>
+</html>
