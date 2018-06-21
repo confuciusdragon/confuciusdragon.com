@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The DreamSmasher</title>
+  <title>DreamSmasher's Anime Page</title>
 <!-- AngularJS link -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -28,21 +28,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="resources/images/yinyang.ico">
 </head>
 <body>
-<!-- to do:
-- Bottom nav links: About, Social Media, Contact, etc.
-- Carousel images, eventually showing off various web layouts.
-- Nav Menu:
-- + links out to demo sites
-- X home link, highlighted already
-- + Bio, options for social media, about page, skills, etc
-- + Portfolio items, work on the game you've made, link out to codefights, etc.
-- + API things - build the festival comparison tool,
-- + Anime
-- + Games I play
-- + Music stuff
-- Contact form
-- Responsiveness
--->
 <nav class="navbar navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,13 +38,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">MyHome</a>
+      <a class="navbar-brand" href="index.html">MyHome</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -79,7 +64,7 @@
             <li><a href="#">Weather Forecast</a></li>
           </ul>
         </li>
-        <li><a href="anime.html">Anime</a></li>
+        <li class="active"><a href="#">Anime <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Games</a></li>
         <li><a href="#">Music</a></li>
       </ul>
@@ -95,54 +80,14 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<!-- Angular JS Navbar
-<div ng-controller="NavBar" ng-cloak>
-  <md-content class="md-padding">
-    <md-nav-bar
-      md-no-ink-bar="disableInkBar"
-      md-selected-nav-item="currentNavItem"
-      nav-bar-aria-label="navigation links">
-    <md-nav-item md-nav-click="goto('home')" name="home">
-      Home
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('bio')" name="bio">
-      About
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('portfolio')" name="portfolio">
-      Portfolio
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('tools')" name="tools">
-      Tools
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('anime')" name="anime">
-      Anime
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('games')" name="games">
-      Games
-    </md-nav-item>
-    <md-nav-item md-nav-click="goto('music')" name="music">
-      Music
-    </md-nav-item>
+
+<!-- The top anime -->
+<div>
+
 </div>
--->
-<div class="bgimg">
-  <div class="topleft">
-    <p></p>
-  </div>
-  <div class="middle">
-    <h1>Work in Progress</h1>
-    <div ng-controller="HelloController">
-      <h2>{{message}}</h2>
-    </div>
-    <hr>
-    <p id="demo" style="font-size:30px"></p>
-  </div>
-  <div class="bottomleft">
-    <p></p>
-  </div>
-</div>
- <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="resources/js/demoscript.js"></script>

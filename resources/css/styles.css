@@ -3,6 +3,19 @@ body, html {
     height: 100%
 }
 
+/* Navbar styles */
+.dropdown-menu{
+    background-color: #222;
+}
+.navbar-nav > li > .dropdown-menu a{
+  color: #CCC;
+}
+
+.navbar, .navbar-inverse{
+  border: 0;
+}
+
+/* Background image */
 .bgimg {
     /* Background image */
     background-image: url('../images/gatebg.jpg');
