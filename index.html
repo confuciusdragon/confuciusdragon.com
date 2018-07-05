@@ -1,20 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html  ng-app="app">
+<html  ng-app="myApp">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The DreamSmasher</title>
 <!-- AngularJS link -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript" src="resources/libs/angular.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- navScript -->
-<script src="resources/js/navScript.js"></script>
+<!-- Angular Tutorial work -->
+<script type="text/javascript" src="resources/js/app.js"></script>
 
 <!-- controllers -->
 <script src="resources/js/controllers.js"></script>
@@ -27,7 +27,7 @@
 <!-- icon -->
 <link rel="shortcut icon" type="image/x-icon" href="resources/images/yinyang.ico">
 </head>
-<body>
+<body ng-controller="MainController">
 <!-- to do:
 - Bottom nav links: About, Social Media, Contact, etc.
 - Carousel images, eventually showing off various web layouts.
@@ -129,10 +129,18 @@
   <div class="topleft">
     <p></p>
   </div>
-  <div class="middle">
-    <h1>Work in Progress</h1>
-    <div ng-controller="HelloController">
-      <h2>{{message}}</h2>
+  <div class="middle" ng-controller="ParentController as parent">
+    <input type="text" ng-model="model.name"/>
+    <h1>This is the Parent: {{ parent.model.name }}</h1>
+    <div ng-controller="ChildController as child">
+      <input type="text" ng-model="name"/>
+      <h2>This is the Child: {{ child.name }}</h2>
+      <h2>Current Item: {{ currentItem }}</h2>
+      <p><input type="text" ng-model="itemIndex"><input type="button" value="Get Item" ng-click="getItem()"></p>
+      <p>Standard bracket expression:</p>
+      <p> {{ randomValue }}</p>
+      <p> One time bracket expression: </p>
+      <p> {{ ::randomValue }}</p>
     </div>
     <hr>
     <p id="demo" style="font-size:30px"></p>
